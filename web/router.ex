@@ -16,6 +16,7 @@ defmodule Pasitotuntun.Router do
   scope "/", Pasitotuntun do
     pipe_through :browser # Use the default browser stack
 
+    resources "/steps", StepController
     get "/", PageController, :index
   end
 
